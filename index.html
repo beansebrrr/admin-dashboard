@@ -9,12 +9,8 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <div class="search"></div>
-    <div class="profile"></div>
-  </header>
   <nav>
-    <span class="nav-item header">
+    <span class="nav-item nav-header">
       <a href="#">
         <svg data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z"></path>
@@ -102,9 +98,45 @@
       </li>
     </ul>
   </nav>
+  
+  <header>
+    <section class="top-bar">
+      <div class="search">
+        <svg data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"></path>
+        </svg>
+        <input type="text" name="Search" id="search-bar">
+      </div>
+      <div class="user-info">
+        <svg data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5"></path>
+        </svg>
+        <div class="profile">
+          <img src="./images/borgor.png" alt="Profile picture" class="profile-picture">
+          <span>beansebrrr</span>
+        </div>
+      </div>
+    </section>
+    <section class="bottom-bar">
+      <div class="greeting">
+        <img src="./images/borgor.png" alt="Profile picture" class="profile-picture">
+        <div class="greeting-text">
+          <span>What's cookin'</span>
+          <h1>Good lookin'?</h1>
+        </div>
+      </div>
+      <div class="btn-container">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </div>
+    </section>
+  </header>
+  
   <main>
     
   </main>
+
   <aside>
 
   </aside>
