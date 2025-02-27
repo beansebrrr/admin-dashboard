@@ -6,6 +6,6 @@ I will be creating a mockup dashboard layout using the knowledge I gained from l
 
 ## TODO
 
-- [ ] Setup basic framework
+- [x] Setup basic framework
 - [ ] Add placeholder elements
 - [ ] Make it look decent
