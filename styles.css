@@ -20,12 +20,8 @@ body {
 
 }
 
-h1, h2 {
+h1, h2, h3 {
   margin-block: 0;
-}
-
-h1 { 
-  font-size: 1.75rem;
 }
 
 p {
@@ -173,13 +169,13 @@ nav {
 main,
 aside {
   background-color: #f6f6f6;
+  h2 { margin-bottom: 1rem;}
 }
 
 main {
   grid-column: span 8;
   grid-row: span 5;
 
-  >h1 { margin-bottom: 1rem;}
 }
 
 .card {
@@ -189,10 +185,11 @@ main {
   background-color: #ffffff;
   border: #000000 solid 2px;
   border-radius: 0.75rem;
-  padding: 0.5rem calc(12px + 1rem);
+  padding: 0.5rem;
+  padding-left: calc(12px + 1rem);
   display: grid;
-  grid-template-rows: repeat(3, auto);
-  gap: 1rem;
+  grid-template-rows: max-content max-content auto;
+  gap: 0.5rem;
 
   &::before {
     content: "";
@@ -233,11 +230,14 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   justify-content: center;
   align-items: start;
-  gap: 2rem 1rem;
+  gap: 1rem;
 }
 
 
 aside {
   grid-column: span 2;
   grid-row: span 5;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 2rem;
 }
